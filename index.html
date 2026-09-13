@@ -1,0 +1,3371 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حلويات الذوق الرفيع | Premium Sweets</title>
+<meta name="description" content="أشهى الحلويات الشرقية والغربية والكيك - اطلب الآن عبر الواتساب">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Playfair+Display:wght@600;700;900&family=Poppins:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+  --primary: #C9A961;
+  --primary-light: #E5C989;
+  --primary-dark: #A88A42;
+  --accent: #D4785A;
+  --secondary: #3D2817;
+  --bg-primary: #FDFBF7;
+  --bg-secondary: #F5EFE6;
+  --bg-elevated: #FFFFFF;
+  --text-primary: #1F1410;
+  --text-secondary: #6B5B4D;
+  --text-tertiary: #9B8B7D;
+  --border: rgba(61, 40, 23, 0.08);
+  --border-strong: rgba(61, 40, 23, 0.15);
+  
+  --success: #10B981;
+  --whatsapp: #25D366;
+  --whatsapp-dark: #128C7E;
+  --danger: #EF4444;
+  
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.03);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.04);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.08), 0 24px 64px rgba(0,0,0,0.06);
+  --shadow-glow: 0 0 40px rgba(201, 169, 97, 0.3);
+  
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-blur: blur(24px) saturate(180%);
+  
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
+  
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition: 0.4s var(--ease-out);
+}
+
+[data-theme="dark"] {
+  --primary: #E5C989;
+  --primary-light: #F0DBA8;
+  --primary-dark: #C9A961;
+  --accent: #E89A7C;
+  --secondary: #F5EFE6;
+  --bg-primary: #0A0806;
+  --bg-secondary: #14100C;
+  --bg-elevated: #1C1611;
+  --text-primary: #F5EFE6;
+  --text-secondary: #B8A896;
+  --text-tertiary: #7D6E60;
+  --border: rgba(245, 239, 230, 0.08);
+  --border-strong: rgba(245, 239, 230, 0.15);
+  
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.3);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.5), 0 24px 64px rgba(0,0,0,0.4);
+  --shadow-glow: 0 0 40px rgba(229, 201, 137, 0.4);
+  
+  --glass-bg: rgba(28, 22, 17, 0.72);
+  --glass-border: rgba(245, 239, 230, 0.1);
+}
+
+[lang="ur"] { font-family: 'Noto Nastaliq Urdu', 'Tajawal', serif; }
+[lang="en"] { font-family: 'Poppins', 'Tajawal', sans-serif; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+  transition: background 0.5s var(--ease-out), color 0.5s var(--ease-out);
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(201, 169, 97, 0.08), transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(212, 120, 90, 0.06), transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+  animation: bgShift 20s ease-in-out infinite;
+}
+
+@keyframes bgShift {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.8; }
+  50% { transform: scale(1.1) rotate(2deg); opacity: 1; }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 48px);
+  max-width: 1240px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  z-index: 1000;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform var(--transition);
+}
+
+.logo:hover { transform: scale(1.03); }
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 12px rgba(201, 169, 97, 0.4);
+  transition: transform 0.6s var(--ease-spring);
+}
+
+.logo:hover .logo-icon { transform: rotate(15deg) scale(1.1); }
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+  background: var(--bg-secondary);
+  padding: 4px;
+  border-radius: var(--radius-full);
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition);
+  display: block;
+}
+
+.nav-links a:hover {
+  color: var(--text-primary);
+  background: var(--bg-elevated);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.05rem;
+  transition: all var(--transition);
+  position: relative;
+}
+
+.icon-btn:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(201, 169, 97, 0.4);
+}
+
+.icon-btn:active { transform: scale(0.95); }
+
+.cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: var(--danger);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+  border: 2px solid var(--bg-primary);
+  animation: badgePop 0.4s var(--ease-spring);
+}
+
+@keyframes badgePop {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.lang-dropdown { position: relative; }
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 8px;
+  min-width: 160px;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s var(--ease-out);
+  z-index: 100;
+}
+
+.lang-dropdown.open .lang-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-menu button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+  text-align: start;
+}
+
+.lang-menu button:hover { background: var(--bg-secondary); }
+.lang-menu button.active { background: var(--primary); color: white; }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 140px 24px 80px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, 
+    rgba(10, 8, 6, 0.75) 0%, 
+    rgba(10, 8, 6, 0.55) 50%,
+    rgba(10, 8, 6, 0.85) 100%);
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: heroZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.15); }
+}
+
+.hero-content {
+  max-width: 850px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1s var(--ease-out);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(201, 169, 97, 0.15);
+  border: 1px solid rgba(201, 169, 97, 0.4);
+  color: var(--primary-light);
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+  backdrop-filter: blur(10px);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5.5vw, 4rem);
+  font-weight: 900;
+  margin-bottom: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .gradient-text {
+  background: linear-gradient(135deg, var(--primary-light), var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  margin-bottom: 44px;
+  opacity: 0.92;
+  max-width: 620px;
+  margin-inline: auto;
+  font-weight: 400;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 34px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s var(--ease-spring);
+  font-family: inherit;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s;
+}
+
+.btn:hover::before { transform: translateX(100%); }
+
+.btn-whatsapp {
+  background: var(--whatsapp);
+  color: white;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp:hover {
+  background: var(--whatsapp-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(37, 211, 102, 0.5);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  box-shadow: 0 8px 24px rgba(201, 169, 97, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(201, 169, 97, 0.5);
+}
+
+.btn-outline {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1.5px solid rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-3px);
+  border-color: white;
+}
+
+section { padding: 100px 0; position: relative; }
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title .subtitle {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.section-title h2 {
+  font-size: clamp(1.9rem, 4.5vw, 3rem);
+  font-weight: 900;
+  color: var(--text-primary);
+  margin-bottom: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.section-title .divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.filters-wrapper {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+}
+
+.search-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-tertiary);
+  pointer-events: none;
+  font-size: 1rem;
+}
+
+[lang="en"] .search-box i { right: auto; left: 20px; }
+
+.search-box input {
+  width: 100%;
+  padding: 14px 52px 14px 20px;
+  background: var(--bg-secondary);
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-full);
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text-primary);
+  transition: all var(--transition);
+}
+
+[lang="en"] .search-box input { padding: 14px 20px 14px 52px; }
+
+.search-box input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: var(--bg-elevated);
+  box-shadow: 0 0 0 4px rgba(201, 169, 97, 0.15);
+}
+
+.categories {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-btn {
+  padding: 10px 22px;
+  background: var(--bg-secondary);
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-full);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.3s var(--ease-spring);
+  white-space: nowrap;
+}
+
+.category-btn:hover {
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+.category-btn.active {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  box-shadow: 0 6px 20px rgba(201, 169, 97, 0.4);
+  transform: translateY(-2px);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  transition: opacity 0.3s var(--ease-out), transform 0.3s var(--ease-out);
+}
+
+.product-wrapper {
+  perspective: 2000px;
+  height: 480px;
+}
+
+.product-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.9s var(--ease-spring);
+  transform-style: preserve-3d;
+}
+
+.product-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.product-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-front {
+  transition: box-shadow 0.4s;
+}
+
+.product-wrapper:hover .product-front {
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.product-back {
+  transform: rotateY(180deg);
+  padding: 28px;
+  background: linear-gradient(160deg, var(--bg-elevated), var(--bg-secondary));
+  justify-content: space-between;
+}
+
+.product-image {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-out);
+}
+
+.product-wrapper:hover .product-image img {
+  transform: scale(1.12);
+}
+
+.product-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.4) 100%);
+}
+
+.product-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  letter-spacing: 0.02em;
+}
+
+.flip-btn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.3s var(--ease-spring);
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.flip-btn:hover {
+  transform: scale(1.15) rotate(180deg);
+  background: var(--primary);
+  color: white;
+}
+
+.product-info {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-info h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.product-info .desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--primary);
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.product-price small {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+.btn-add-cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  padding: 12px 20px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-spring);
+  font-family: inherit;
+  box-shadow: 0 4px 14px rgba(201, 169, 97, 0.4);
+  position: relative;
+  z-index: 5;
+}
+
+.btn-add-cart:hover:not(:disabled) {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(201, 169, 97, 0.5);
+}
+
+.btn-add-cart:active { transform: scale(0.96); }
+
+.btn-add-cart.added {
+  background: var(--success);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+  cursor: default;
+}
+
+.btn-add-cart:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.product-back h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-back h4 i { color: var(--primary); }
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.nutrition-item {
+  background: var(--bg-primary);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.nutrition-item .value {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--primary);
+  display: block;
+}
+
+.nutrition-item .label {
+  font-size: 0.72rem;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.product-details {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.product-details strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.btn-flip-back {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 10px 18px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-strong);
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-flip-back:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-btn {
+  min-width: 44px;
+  height: 44px;
+  padding: 0 14px;
+  border-radius: var(--radius-full);
+  background: var(--bg-secondary);
+  border: 1.5px solid transparent;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-spring);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.page-btn:hover:not(:disabled):not(.active) {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(201, 169, 97, 0.4);
+}
+
+.page-btn.active {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  box-shadow: 0 6px 20px rgba(201, 169, 97, 0.5);
+  transform: scale(1.05);
+  cursor: default;
+}
+
+.page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.page-btn.nav-btn {
+  padding: 0 18px;
+  background: var(--bg-elevated);
+  border: 1.5px solid var(--border-strong);
+}
+
+.page-btn.nav-btn:hover:not(:disabled) {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.page-info {
+  padding: 0 12px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.page-dots {
+  color: var(--text-tertiary);
+  font-weight: 700;
+  padding: 0 4px;
+  user-select: none;
+}
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 8, 6, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s var(--ease-out);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.lightbox-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-panel {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-xl);
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  transform: scale(0.9) translateY(20px);
+  transition: transform 0.5s var(--ease-spring);
+  overflow: hidden;
+}
+
+.lightbox-overlay.open .cart-panel {
+  transform: scale(1) translateY(0);
+}
+
+.cart-header {
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--bg-elevated), var(--bg-secondary));
+}
+
+.cart-header h3 {
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-header h3 i { color: var(--primary); }
+
+.close-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.close-btn:hover {
+  background: var(--danger);
+  color: white;
+  transform: rotate(90deg);
+}
+
+.cart-items {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cart-items::-webkit-scrollbar { width: 6px; }
+.cart-items::-webkit-scrollbar-track { background: transparent; }
+.cart-items::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-tertiary);
+}
+
+.cart-empty i {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  opacity: 0.4;
+  display: block;
+}
+
+.cart-empty p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cart-item {
+  display: flex;
+  gap: 14px;
+  padding: 14px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  align-items: center;
+  animation: slideIn 0.4s var(--ease-spring);
+  border: 1px solid var(--border);
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.cart-item-image {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cart-item-info { flex-grow: 1; min-width: 0; }
+
+.cart-item-info h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart-item-info .price {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.cart-item-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-full);
+  padding: 2px;
+  border: 1px solid var(--border);
+}
+
+.qty-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+  font-weight: 700;
+}
+
+.qty-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.qty-btn:active { transform: scale(0.9); }
+
+.qty-value {
+  min-width: 28px;
+  text-align: center;
+  font-weight: 800;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: var(--danger);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 4px;
+  border-radius: 50%;
+  transition: all 0.2s;
+  opacity: 0.7;
+}
+
+.remove-btn:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.cart-footer {
+  padding: 20px 28px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-secondary);
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cart-total-value {
+  font-size: 1.6rem;
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.btn-checkout {
+  width: 100%;
+  padding: 16px;
+  background: var(--whatsapp);
+  color: white;
+  border: none;
+  border-radius: var(--radius-full);
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 1.05rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s var(--ease-spring);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+}
+
+.btn-checkout:hover:not(:disabled) {
+  background: var(--whatsapp-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(37, 211, 102, 0.5);
+}
+
+.btn-checkout:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 36px 24px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  transition: all 0.4s var(--ease-spring);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transform: scaleX(0);
+  transition: transform 0.5s var(--ease-out);
+}
+
+.feature-card:hover::before { transform: scaleX(1); }
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.feature-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.7rem;
+  box-shadow: 0 8px 24px rgba(201, 169, 97, 0.35);
+  transition: transform 0.5s var(--ease-spring);
+}
+
+.feature-card:hover .feature-icon {
+  transform: rotate(-8deg) scale(1.1);
+}
+
+.feature-card h3 {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.testimonial-card {
+  background: var(--bg-elevated);
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  position: relative;
+  transition: all 0.4s var(--ease-out);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: 4px;
+  left: 24px;
+  font-size: 5rem;
+  color: var(--primary);
+  opacity: 0.15;
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+}
+
+.stars {
+  color: #FFB800;
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+  display: flex;
+  gap: 2px;
+}
+
+.testimonial-card p {
+  color: var(--text-secondary);
+  margin-bottom: 22px;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  position: relative;
+  z-index: 1;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.client-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.client-name {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.faq-list { max-width: 820px; margin: 0 auto; }
+
+.faq-item {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.faq-item.active {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.faq-question {
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  user-select: none;
+  gap: 12px;
+}
+
+.faq-question i {
+  transition: transform 0.4s var(--ease-spring);
+  color: var(--primary);
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  background: var(--bg-secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+  background: var(--primary);
+  color: white;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s var(--ease-out), padding 0.3s;
+  padding: 0 24px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 400px;
+  padding: 0 24px 22px;
+}
+
+.contact {
+  background: linear-gradient(135deg, var(--secondary), var(--bg-primary));
+  color: white;
+  text-align: center;
+  border-radius: var(--radius-xl);
+  margin: 60px 24px;
+  padding: 80px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .contact {
+  background: linear-gradient(135deg, #1C1611, var(--bg-primary));
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(201, 169, 97, 0.2), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(212, 120, 90, 0.15), transparent 40%);
+  pointer-events: none;
+}
+
+.contact > * { position: relative; z-index: 1; }
+
+.contact h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 18px;
+  font-weight: 900;
+}
+
+.contact > p {
+  opacity: 0.92;
+  margin-bottom: 34px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 44px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-item i {
+  width: 46px;
+  height: 46px;
+  background: rgba(201, 169, 97, 0.2);
+  border: 1px solid rgba(201, 169, 97, 0.4);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-light);
+  font-size: 1.15rem;
+  backdrop-filter: blur(10px);
+}
+
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 40px 24px;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+.footer a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  width: 60px;
+  height: 60px;
+  background: var(--whatsapp);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+  z-index: 999;
+  transition: all 0.3s var(--ease-spring);
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.12) rotate(8deg);
+  background: var(--whatsapp-dark);
+}
+
+.whatsapp-float::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid var(--whatsapp);
+  animation: ripple 2s infinite;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s var(--ease-out);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast {
+  position: fixed;
+  bottom: 100px;
+  left: 28px;
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  padding: 14px 22px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.4s var(--ease-spring);
+  z-index: 3000;
+  pointer-events: none;
+}
+
+.toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.toast i {
+  color: var(--success);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1400px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container { padding: 0 20px; }
+  
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  
+  .product-wrapper { height: 440px; }
+  .product-image { height: 200px; }
+  .product-info { padding: 16px; }
+  .product-info h3 { font-size: 1.05rem; }
+  .product-info .desc { font-size: 0.82rem; }
+  .product-price { font-size: 1.25rem; }
+  .btn-add-cart { padding: 9px 14px; font-size: 0.78rem; }
+  
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .menu-toggle { display: block; }
+  
+  .nav-links.active {
+    display: flex;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    left: 0;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    flex-direction: column;
+    padding: 12px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-lg);
+    gap: 4px;
+    z-index: 1001;
+  }
+  
+  .nav-links.active a {
+    padding: 12px 16px;
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+  
+  .header { top: 10px; width: calc(100% - 20px); }
+  .header-inner { padding: 10px 14px; }
+  .logo span { display: none; }
+  .logo-icon { width: 38px; height: 38px; font-size: 1rem; }
+  .icon-btn { width: 38px; height: 38px; font-size: 0.95rem; }
+  
+  section { padding: 80px 0; }
+  .section-title { margin-bottom: 40px; }
+  .hero { padding: 130px 20px 70px; }
+  .hero-badge { font-size: 0.82rem; padding: 8px 18px; }
+  .hero p { font-size: 1rem; }
+  
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .product-wrapper { height: 440px; }
+  
+  .pagination {
+    margin-top: 36px;
+    padding: 14px;
+    gap: 6px;
+  }
+  
+  .page-btn {
+    min-width: 40px;
+    height: 40px;
+    font-size: 0.88rem;
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  
+  .product-wrapper { height: 400px; }
+  .product-image { height: 160px; }
+  .product-info { padding: 12px; }
+  .product-info h3 { font-size: 0.92rem; margin-bottom: 4px; }
+  .product-info .desc { font-size: 0.75rem; -webkit-line-clamp: 2; margin-bottom: 8px; }
+  
+  .product-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  
+  .product-price { font-size: 1.05rem; justify-content: center; }
+  .btn-add-cart { width: 100%; padding: 8px 10px; font-size: 0.78rem; gap: 4px; }
+  .btn-add-cart i { font-size: 0.7rem; }
+  
+  .product-badge { font-size: 0.62rem; padding: 4px 8px; top: 8px; right: 8px; }
+  .flip-btn { width: 30px; height: 30px; font-size: 0.75rem; top: 8px; left: 8px; }
+  
+  .features-grid,
+  .testimonials-grid { grid-template-columns: 1fr; }
+  
+  .contact-info {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  
+  .pagination {
+    margin-top: 28px;
+    padding: 10px;
+    gap: 4px;
+    border-radius: var(--radius-md);
+  }
+  
+  .page-btn {
+    min-width: 34px;
+    height: 34px;
+    font-size: 0.8rem;
+    padding: 0 8px;
+  }
+  
+  .page-btn.nav-btn {
+    padding: 0 10px;
+    font-size: 0.75rem;
+  }
+  
+  .page-btn.nav-btn span { display: none; }
+  
+  .page-info {
+    font-size: 0.72rem;
+    padding: 0 6px;
+    width: 100%;
+    text-align: center;
+    order: 10;
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 0 16px; }
+  section { padding: 60px 0; }
+  .section-title { margin-bottom: 32px; }
+  .section-title h2 { font-size: 1.7rem; }
+  .section-title .subtitle { font-size: 0.82rem; }
+  
+  .hero { padding: 110px 16px 50px; min-height: auto; }
+  .hero h1 { font-size: clamp(1.7rem, 7vw, 2.4rem); margin-bottom: 18px; }
+  .hero p { font-size: 0.95rem; margin-bottom: 32px; }
+  
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .hero-buttons .btn { width: 100%; padding: 14px 20px; }
+  
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .product-wrapper { height: 380px; }
+  .product-image { height: 140px; }
+  .product-info { padding: 10px; }
+  .product-info h3 { font-size: 0.85rem; line-height: 1.3; }
+  .product-info .desc { font-size: 0.7rem; -webkit-line-clamp: 2; }
+  .product-price { font-size: 1rem; }
+  .product-price small { font-size: 0.65rem; }
+  .btn-add-cart { padding: 7px 8px; font-size: 0.72rem; }
+  
+  .filters-wrapper { padding: 16px; gap: 12px; margin-bottom: 28px; }
+  .search-box input { padding: 12px 46px 12px 16px; font-size: 0.92rem; }
+  [lang="en"] .search-box input { padding: 12px 16px 12px 46px; }
+  
+  .categories {
+    gap: 6px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .categories::-webkit-scrollbar { display: none; }
+  .category-btn { padding: 8px 16px; font-size: 0.82rem; flex-shrink: 0; }
+  
+  .feature-card { padding: 28px 20px; }
+  .feature-icon { width: 60px; height: 60px; font-size: 1.4rem; }
+  .feature-card h3 { font-size: 1.05rem; }
+  .feature-card p { font-size: 0.88rem; }
+  
+  .testimonial-card { padding: 24px 20px; }
+  .testimonial-card p { font-size: 0.9rem; }
+  
+  .faq-question { padding: 16px 18px; font-size: 0.92rem; }
+  .faq-answer { padding: 0 18px; font-size: 0.88rem; }
+  .faq-item.active .faq-answer { padding: 0 18px 18px; }
+  
+  .contact { margin: 30px 12px; padding: 50px 20px; border-radius: var(--radius-lg); }
+  .contact h2 { font-size: 1.6rem; }
+  .contact > p { font-size: 0.95rem; }
+  .contact-info { gap: 14px; }
+  .contact-item { font-size: 0.9rem; }
+  .contact-item i { width: 40px; height: 40px; font-size: 1rem; }
+  
+  .btn { padding: 13px 24px; font-size: 0.9rem; }
+  
+  .whatsapp-float { width: 54px; height: 54px; font-size: 1.5rem; bottom: 20px; left: 20px; }
+  
+  .cart-panel { max-height: 92vh; border-radius: var(--radius-lg); }
+  .cart-header { padding: 18px 20px; }
+  .cart-header h3 { font-size: 1.15rem; }
+  .cart-items { padding: 16px 20px; gap: 10px; }
+  .cart-item { padding: 12px; gap: 10px; }
+  .cart-item-image { width: 60px; height: 60px; }
+  .cart-item-info h4 { font-size: 0.88rem; }
+  .cart-item-info .price { font-size: 0.85rem; }
+  .cart-footer { padding: 16px 20px; }
+  .cart-total { font-size: 1rem; }
+  .cart-total-value { font-size: 1.35rem; }
+  .btn-checkout { padding: 14px; font-size: 0.95rem; }
+  
+  .toast { left: 16px; right: 16px; bottom: 90px; justify-content: center; font-size: 0.88rem; padding: 12px 18px; }
+  
+  .header { top: 8px; width: calc(100% - 16px); }
+  .header-inner { padding: 10px 12px; gap: 10px; }
+  .header-actions { gap: 6px; }
+  .icon-btn { width: 36px; height: 36px; font-size: 0.9rem; }
+  .logo-icon { width: 36px; height: 36px; font-size: 0.95rem; }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  
+  .product-wrapper { height: auto; min-height: 420px; }
+  .product-image { height: 200px; }
+  .product-info { padding: 16px; }
+  .product-info h3 { font-size: 1.05rem; }
+  .product-info .desc { font-size: 0.85rem; }
+  
+  .product-footer {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .product-price { font-size: 1.3rem; }
+  .btn-add-cart { padding: 9px 14px; font-size: 0.82rem; }
+  
+  .hero h1 { font-size: 1.55rem; }
+  .hero p { font-size: 0.88rem; }
+  .section-title h2 { font-size: 1.5rem; }
+  
+  .contact h2 { font-size: 1.4rem; }
+  .cart-item-image { width: 52px; height: 52px; }
+  
+  .pagination {
+    flex-wrap: wrap;
+    padding: 8px;
+    gap: 4px;
+  }
+  
+  .page-btn {
+    min-width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
+    padding: 0 6px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container { max-width: 1320px; }
+  
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}
+
+@media print {
+  .header, .whatsapp-float, .toast, .lightbox-overlay, .pagination { display: none !important; }
+  body { background: white; }
+  .product-wrapper { height: auto; page-break-inside: avoid; }
+  .product-card { transform: none !important; }
+  .product-back { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (hover: none) {
+  .product-wrapper:hover .product-image img { transform: none; }
+  .product-wrapper:hover .product-front { box-shadow: var(--shadow-md); }
+  .feature-card:hover { transform: none; }
+  .testimonial-card:hover { transform: none; }
+  .btn:hover { transform: none; }
+  .category-btn:hover { transform: none; }
+  .icon-btn:hover { transform: none; }
+  .page-btn:hover:not(.active) { transform: none; }
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--primary), var(--primary-dark));
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--primary-dark); }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon"><i class="fas fa-cake-candles"></i></div>
+      <span data-i18n="store_name">حلويات الذوق الرفيع</span>
+    </a>
+    
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+        <li><a href="#products" data-i18n="nav_products">المنتجات</a></li>
+        <li><a href="#why" data-i18n="nav_why">لماذا نحن</a></li>
+        <li><a href="#faq" data-i18n="nav_faq">الأسئلة</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">تواصل</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-dropdown" id="langDropdown">
+        <button class="icon-btn" onclick="toggleLangMenu()" aria-label="Language">
+          <i class="fas fa-globe"></i>
+        </button>
+        <div class="lang-menu">
+          <button onclick="setLanguage('ar')" data-lang="ar" class="active">🇸🇦 العربية</button>
+          <button onclick="setLanguage('en')" data-lang="en">🇬🇧 English</button>
+          <button onclick="setLanguage('ur')" data-lang="ur">🇵🇰 اردو</button>
+        </div>
+      </div>
+
+      <button class="icon-btn" onclick="toggleTheme()" aria-label="Theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+
+      <button class="icon-btn" onclick="openCart()" aria-label="Cart">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-badge" id="cartBadge" style="display:none;">0</span>
+      </button>
+
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1920" alt="Hero">
+  </div>
+  <div class="hero-content">
+    <span class="hero-badge">
+      <i class="fas fa-star"></i>
+      <span data-i18n="hero_badge">أشهى الحلويات الطازجة يومياً</span>
+    </span>
+    <h1>
+      <span data-i18n="hero_title_1">استمتع بألذ</span>
+      <span class="gradient-text" data-i18n="hero_title_2"> الحلويات </span>
+      <span data-i18n="hero_title_3">في مدينتك</span>
+    </h1>
+    <p data-i18n="hero_desc">حلويات شرقية وغربية وكيك مناسبات بمكونات طبيعية 100% — اطلب الآن مباشرة عبر الواتساب</p>
+    <div class="hero-buttons">
+      <a href="#products" class="btn btn-primary">
+        <i class="fas fa-utensils"></i>
+        <span data-i18n="browse_products">تصفح المنتجات</span>
+      </a>
+      <a href="#" class="btn btn-outline" onclick="openGeneralChat(event)">
+        <i class="fab fa-whatsapp"></i>
+        <span data-i18n="contact_us">تواصل معنا</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="subtitle" data-i18n="products_subtitle">منتجاتنا المميزة</span>
+      <h2 data-i18n="products_title">اختر ما يناسبك واطلب فوراً</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="filters-wrapper reveal">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="ابحث عن منتج..." data-i18n-placeholder="search_placeholder">
+      </div>
+      <div class="categories" id="categories">
+        <button class="category-btn active" data-category="all" data-i18n="cat_all">الكل</button>
+        <button class="category-btn" data-category="شرقية" data-i18n="cat_eastern">حلويات شرقية</button>
+        <button class="category-btn" data-category="غربية" data-i18n="cat_western">حلويات غربية</button>
+        <button class="category-btn" data-category="كيك" data-i18n="cat_cakes">كيك المناسبات</button>
+        <button class="category-btn" data-category="معجنات" data-i18n="cat_pastry">معجنات</button>
+      </div>
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+
+    <div class="pagination" id="pagination" style="display: none;"></div>
+  </div>
+</section>
+
+<section id="why" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="subtitle" data-i18n="why_subtitle">مزايانا</span>
+      <h2 data-i18n="why_title">لماذا يختارنا العملاء؟</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fas fa-award"></i></div>
+        <h3 data-i18n="feature_1_title">جودة عالية</h3>
+        <p data-i18n="feature_1_desc">مكونات طبيعية 100% ووصفات أصيلة من أفضل الطهاة</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fas fa-truck-fast"></i></div>
+        <h3 data-i18n="feature_2_title">توصيل سريع</h3>
+        <p data-i18n="feature_2_desc">نوصل طلبك خلال ساعة داخل المدينة بكل عناية</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fab fa-whatsapp"></i></div>
+        <h3 data-i18n="feature_3_title">طلب سهل</h3>
+        <p data-i18n="feature_3_desc">اطلب مباشرة عبر الواتساب بدون تسجيل أو تعقيد</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fas fa-heart"></i></div>
+        <h3 data-i18n="feature_4_title">رضا مضمون</h3>
+        <p data-i18n="feature_4_desc">أكثر من 5000 عميل سعيد يثقون بنا سنوياً</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="subtitle" data-i18n="testimonials_subtitle">آراء عملائنا</span>
+      <h2 data-i18n="testimonials_title">ماذا يقولون عنا؟</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p data-i18n="testimonial_1">أفضل حلويات جربتها في حياتي! الكيك كان طازج ولذيذ جداً والتوصيل كان سريع.</p>
+        <div class="client-info">
+          <div class="client-avatar">م</div>
+          <div class="client-name" data-i18n="client_1">محمد العتيبي</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p data-i18n="testimonial_2">طلبت كيك عيد ميلاد وكان فوق التوقعات. الشكل جميل والطعم رائع. أنصح الجميع!</p>
+        <div class="client-info">
+          <div class="client-avatar">ن</div>
+          <div class="client-name" data-i18n="client_2">نورة السالم</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p data-i18n="testimonial_3">التعامل عبر الواتساب سهل ومريح، والرد كان سريع. تجربة شراء ممتازة بكل المقاييس.</p>
+        <div class="client-info">
+          <div class="client-avatar">ع</div>
+          <div class="client-name" data-i18n="client_3">عبدالله القحطاني</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="subtitle" data-i18n="faq_subtitle">الأسئلة الشائعة</span>
+      <h2 data-i18n="faq_title">كل ما تريد معرفته</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span data-i18n="faq_q1">كيف أطلب من الموقع؟</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer" data-i18n="faq_a1">
+          اختر المنتجات التي تعجبك، أضفها للسلة، ثم اضغط "إتمام الطلب" وستفتح محادثة تلقائياً مع رسالة جاهزة.
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span data-i18n="faq_q2">كم يستغرق التوصيل؟</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer" data-i18n="faq_a2">
+          داخل المدينة: خلال 60 دقيقة. خارج المدينة: من 2-4 ساعات حسب المسافة.
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span data-i18n="faq_q3">هل يمكنني طلب كيك مناسبات مخصص؟</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer" data-i18n="faq_a3">
+          نعم بكل تأكيد! راسلنا على الواتساب وأخبرنا بالتفاصيل وسنحضره لك حسب طلبك.
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-question">
+          <span data-i18n="faq_q4">ما هي طرق الدفع المتاحة؟</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer" data-i18n="faq_a4">
+          نقبل الدفع نقداً عند التسليم، أو عبر التحويل البنكي، أو مدى/Apple Pay.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 data-i18n="contact_title">جاهز لتجربة ألذ الحلويات؟</h2>
+  <p data-i18n="contact_desc">راسلنا الآن عبر الواتساب وسنخدمك في الحال</p>
+  <button class="btn btn-whatsapp" onclick="openGeneralChat(event)">
+    <i class="fab fa-whatsapp"></i>
+    <span data-i18n="contact_now">تواصل معنا الآن</span>
+  </button>
+
+  <div class="contact-info">
+    <div class="contact-item">
+      <i class="fas fa-phone"></i>
+      <span>+966 50 123 4567</span>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-clock"></i>
+      <span data-i18n="contact_hours">يومياً من 9 صباحاً - 12 منتصف الليل</span>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <span data-i18n="contact_location">الرياض - حي النخيل</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 <a href="#">حلويات الذوق الرفيع</a> — <span data-i18n="footer_rights">جميع الحقوق محفوظة</span></p>
+  </div>
+</footer>
+
+<a href="#" class="whatsapp-float" onclick="openGeneralChat(event)" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<div class="lightbox-overlay" id="cartOverlay" onclick="closeCartOnOverlay(event)">
+  <div class="cart-panel" onclick="event.stopPropagation()">
+    <div class="cart-header">
+      <h3>
+        <i class="fas fa-shopping-bag"></i>
+        <span data-i18n="cart_title">سلة الطلبات</span>
+        <span id="cartItemCount" style="color: var(--primary); font-size: 0.95rem;">(0)</span>
+      </h3>
+      <button class="close-btn" onclick="closeCart()" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span data-i18n="cart_total">الإجمالي:</span>
+        <span class="cart-total-value"><span id="cartTotal">0</span> <span data-i18n="currency">ر.س</span></span>
+      </div>
+      <button class="btn-checkout" id="checkoutBtn" onclick="checkout()" disabled>
+        <i class="fab fa-whatsapp"></i>
+        <span data-i18n="checkout">إتمام الطلب عبر الواتساب</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast">
+  <i class="fas fa-check-circle"></i>
+  <span id="toastMessage"></span>
+</div>
+
+<script>
+const CONFIG = {
+  whatsappNumber: "966501234567",
+  currency: { ar: "ر.س", en: "SAR", ur: "روپے" }
+};
+
+const products = [
+  {
+    id: 1,
+    name: { ar: "بقلاوة بالفستق الحلبي", en: "Pistachio Baklava", ur: "پستہ بقلاوا" },
+    description: {
+      ar: "بقلاوة طازجة محشوة بالفستق الحلبي الفاخر مع القطر الطبيعي",
+      en: "Fresh baklava stuffed with premium Aleppo pistachios and natural syrup",
+      ur: "تازہ بقلاوا، شاندار حلب پستے اور قدرتی شربت کے ساتھ"
+    },
+    price: 85,
+    category: "شرقية",
+    badge: { ar: "الأكثر مبيعاً", en: "Best Seller", ur: "سب سے زیادہ فروخت" },
+    image: "https://images.unsplash.com/photo-1519676867240-f03562e64548?w=600",
+    nutrition: { calories: 380, protein: 8, carbs: 42, fat: 20 },
+    details: {
+      ar: { weight: "500 جرام", serves: "4-6 أشخاص", shelf: "7 أيام" },
+      en: { weight: "500g", serves: "4-6 people", shelf: "7 days" },
+      ur: { weight: "500 گرام", serves: "4-6 افراد", shelf: "7 دن" }
+    }
+  },
+  {
+    id: 2,
+    name: { ar: "كنافة نابلسية", en: "Nabulsi Kunafa", ur: "نابلس کنافہ" },
+    description: {
+      ar: "كنافة طازجة بالجبنة النابلسية والقطر الدافئ",
+      en: "Fresh kunafa with Nabulsi cheese and warm syrup",
+      ur: "تازہ کنافہ، نابلسی پنیر اور گرم شربت کے ساتھ"
+    },
+    price: 75,
+    category: "شرقية",
+    badge: { ar: "", en: "", ur: "" },
+    image: "https://images.unsplash.com/photo-1579888944880-d98341245702?w=600",
+    nutrition: { calories: 420, protein: 12, carbs: 48, fat: 18 },
+    details: {
+      ar: { weight: "600 جرام", serves: "4 أشخاص", shelf: "3 أيام" },
+      en: { weight: "600g", serves: "4 people", shelf: "3 days" },
+      ur: { weight: "600 گرام", serves: "4 افراد", shelf: "3 دن" }
+    }
+  },
+  {
+    id: 3,
+    name: { ar: "بسبوسة بالقشطة", en: "Basbousa with Cream", ur: "بسبوسہ بالائی کے ساتھ" },
+    description: {
+      ar: "بسبوسة طرية بالقشطة الطازجة واللوز المحمص",
+      en: "Soft basbousa with fresh cream and roasted almonds",
+      ur: "نرم بسبوسہ، تازہ بالائی اور بھنے بادام کے ساتھ"
+    },
+    price: 55,
+    category: "شرقية",
+    badge: { ar: "", en: "", ur: "" },
+    image: "https://images.unsplash.com/photo-1587241321921-91a834d6d191?w=600",
+    nutrition: { calories: 320, protein: 6, carbs: 55, fat: 12 },
+    details: {
+      ar: { weight: "500 جرام", serves: "4 أشخاص", shelf: "5 أيام" },
+      en: { weight: "500g", serves: "4 people", shelf: "5 days" },
+      ur: { weight: "500 گرام", serves: "4 افراد", shelf: "5 دن" }
+    }
+  },
+  {
+    id: 4,
+    name: { ar: "تشيز كيك التوت", en: "Berry Cheesecake", ur: "بیری چیز کیک" },
+    description: {
+      ar: "تشيز كيك كريمي بطبقة من التوت الطازج",
+      en: "Creamy cheesecake topped with fresh berries",
+      ur: "کریمی چیز کیک، تازہ بیریز کی تہہ کے ساتھ"
+    },
+    price: 95,
+    category: "غربية",
+    badge: { ar: "جديد", en: "New", ur: "نیا" },
+    image: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600",
+    nutrition: { calories: 450, protein: 9, carbs: 40, fat: 28 },
+    details: {
+      ar: { weight: "قطعة 150 جرام", serves: "شخص واحد", shelf: "4 أيام" },
+      en: { weight: "150g slice", serves: "1 person", shelf: "4 days" },
+      ur: { weight: "150 گرام سلائس", serves: "1 فرد", shelf: "4 دن" }
+    }
+  },
+  {
+    id: 5,
+    name: { ar: "براوني بالشوكولاتة", en: "Chocolate Brownie", ur: "چاکلیٹ براؤنی" },
+    description: {
+      ar: "براوني غني بالشوكولاتة البلجيكية الأصلية",
+      en: "Rich brownie with authentic Belgian chocolate",
+      ur: "اصل بیلجیئم چاکلیٹ کے ساتھ بھرپور براؤنی"
+    },
+    price: 65,
+    category: "غربية",
+    badge: { ar: "", en: "", ur: "" },
+    image: "https://images.unsplash.com/photo-1607920591413-4ec007e70023?w=600",
+    nutrition: { calories: 480, protein: 7, carbs: 52, fat: 26 },
+    details: {
+      ar: { weight: "قطعة 120 جرام", serves: "شخص واحد", shelf: "5 أيام" },
+      en: { weight: "120g piece", serves: "1 person", shelf: "5 days" },
+      ur: { weight: "120 گرام", serves: "1 فرد", shelf: "5 دن" }
+    }
+  },
+  {
+    id: 6,
+    name: { ar: "تيراميسو إيطالي", en: "Italian Tiramisu", ur: "اطالوی تیرامیسو" },
+    description: {
+      ar: "تيراميسو أصلي بوصفة إيطالية وقهوة مختصة",
+      en: "Authentic tiramisu with Italian recipe and specialty coffee",
+      ur: "اطالوی ترکیب اور اسپیشلٹی کافی کے ساتھ اصل تیرامیسو"
+    },
+    price: 90,
+    category: "غربية",
+    badge: { ar: "مميز", en: "Premium", ur: "پریمیم" },
+    image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600",
+    nutrition: { calories: 420, protein: 8, carbs: 45, fat: 24 },
+    details: {
+      ar: { weight: "قطعة 140 جرام", serves: "شخص واحد", shelf: "3 أيام" },
+      en: { weight: "140g slice", serves: "1 person", shelf: "3 days" },
+      ur: { weight: "140 گرام سلائس", serves: "1 فرد", shelf: "3 دن" }
+    }
+  },
+  {
+    id: 7,
+    name: { ar: "كيك عيد ميلاد فاخر", en: "Luxury Birthday Cake", ur: "لگژری سالگرہ کیک" },
+    description: {
+      ar: "كيك طبقات بتصميم مخصص حسب رغبتك",
+      en: "Layered cake with custom design per your request",
+      ur: "آپ کی پسند کے مطابق کسٹم ڈیزائن کے ساتھ لیئرڈ کیک"
+    },
+    price: 250,
+    category: "كيك",
+    badge: { ar: "الأكثر طلباً", en: "Most Ordered", ur: "سب سے زیادہ آرڈر" },
+    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600",
+    nutrition: { calories: 380, protein: 5, carbs: 58, fat: 18 },
+    details: {
+      ar: { weight: "1.5 كيلو", serves: "10-12 شخص", shelf: "3 أيام" },
+      en: { weight: "1.5kg", serves: "10-12 people", shelf: "3 days" },
+      ur: { weight: "1.5 کلو", serves: "10-12 افراد", shelf: "3 دن" }
+    }
+  },
+  {
+    id: 8,
+    name: { ar: "كيك زفاف 3 طوابق", en: "3-Tier Wedding Cake", ur: "3 منزلہ شادی کیک" },
+    description: {
+      ar: "كيك أعراس فاخر بتصميم أنيق ومخصص",
+      en: "Luxury wedding cake with elegant custom design",
+      ur: "خوبصورت کسٹم ڈیزائن کے ساتھ لگژری شادی کیک"
+    },
+    price: 800,
+    category: "كيك",
+    badge: { ar: "", en: "", ur: "" },
+    image: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=600",
+    nutrition: { calories: 400, protein: 5, carbs: 60, fat: 20 },
+    details: {
+      ar: { weight: "5 كيلو", serves: "40-50 شخص", shelf: "3 أيام" },
+      en: { weight: "5kg", serves: "40-50 people", shelf: "3 days" },
+      ur: { weight: "5 کلو", serves: "40-50 افراد", shelf: "3 دن" }
+    }
+  },
+  {
+    id: 9,
+    name: { ar: "كيك الشوكولاتة الملكي", en: "Royal Chocolate Cake", ur: "شاہی چاکلیٹ کیک" },
+    description: {
+      ar: "كيك شوكولاتة غني بـ 3 طبقات من الكريمة",
+      en: "Rich chocolate cake with 3 layers of cream",
+      ur: "کریم کی 3 تہوں کے ساتھ بھرپور چاکلیٹ کیک"
+    },
+    price: 180,
+    category: "كيك",
+    badge: { ar: "", en: "", ur: "" },
+    image: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=600",
+    nutrition: { calories: 460, protein: 6, carbs: 55, fat: 24 },
+    details: {
+      ar: { weight: "1 كيلو", serves: "8-10 أشخاص", shelf: "3 أيام" },
+      en: { weight: "1kg", serves: "8-10 people", shelf: "3 days" },
+      ur: { weight: "1 کلو", serves: "8-10 افراد", shelf: "3 دن" }
+    }
+  },
+  {
+    id: 10,
+    name: { ar: "كرواسون بالزبدة", en: "Butter Croissant", ur: "مکھن کروسان" },
+    description: {
+      ar: "كرواسون فرنسي طازج بالزبدة الطبيعية",
+      en: "Fresh French croissant with natural butter",
+      ur: "قدرتی مکھن کے ساتھ تازہ فرانسیسی کروسان"
+    },
+    price: 12,
+    category: "معجنات",
+    badge: { ar: "", en: "", ur: "" },
+    image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600",
+    nutrition: { calories: 280, protein: 6, carbs: 32, fat: 14 },
+    details: {
+      ar: { weight: "80 جرام", serves: "شخص واحد", shelf: "يومان" },
+      en: { weight: "80g", serves: "1 person", shelf: "2 days" },
+      ur: { weight: "80 گرام", serves: "1 فرد", shelf: "2 دن" }
+    }
+  },
+  {
+    id: 11,
+    name: { ar: "دونات مشكلة (6 حبات)", en: "Mixed Donuts (6 pcs)", ur: "مکس ڈونٹس (6 عدد)" },
+    description: {
+      ar: "دونات طازج بحشوات متنوعة وشوكولاتة",
+      en: "Fresh donuts with assorted fillings and chocolate",
+      ur: "مختلف فلنگ اور چاکلیٹ کے ساتھ تازہ ڈونٹس"
+    },
+    price: 45,
+    category: "معجنات",
+    badge: { ar: "", en: "", ur: "" },
+    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600",
+    nutrition: { calories: 300, protein: 4, carbs: 42, fat: 14 },
+    details: {
+      ar: { weight: "6 حبات", serves: "3-4 أشخاص", shelf: "يومان" },
+      en: { weight: "6 pieces", serves: "3-4 people", shelf: "2 days" },
+      ur: { weight: "6 عدد", serves: "3-4 افراد", shelf: "2 دن" }
+    }
+  },
+  {
+    id: 12,
+    name: { ar: "سينابون بالقرفة", en: "Cinnamon Roll", ur: "دار چینی رول" },
+    description: {
+      ar: "سينابون طري بالقرفة والكريمة الجبنية",
+      en: "Soft cinnamon roll with cream cheese frosting",
+      ur: "دار چینی اور کریم چیز فراسٹنگ کے ساتھ نرم سینابون"
+    },
+    price: 35,
+    category: "معجنات",
+    badge: { ar: "مميز", en: "Premium", ur: "پریمیم" },
+    image: "https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=600",
+    nutrition: { calories: 340, protein: 5, carbs: 48, fat: 15 },
+    details: {
+      ar: { weight: "120 جرام", serves: "شخص واحد", shelf: "3 أيام" },
+      en: { weight: "120g", serves: "1 person", shelf: "3 days" },
+      ur: { weight: "120 گرام", serves: "1 فرد", shelf: "3 دن" }
+    }
+  }
+];
+
+const translations = {
+  ar: {
+    store_name: "حلويات الذوق الرفيع",
+    nav_home: "الرئيسية",
+    nav_products: "المنتجات",
+    nav_why: "لماذا نحن",
+    nav_faq: "الأسئلة",
+    nav_contact: "تواصل",
+    hero_badge: "أشهى الحلويات الطازجة يومياً",
+    hero_title_1: "استمتع بألذ",
+    hero_title_2: " الحلويات ",
+    hero_title_3: "في مدينتك",
+    hero_desc: "حلويات شرقية وغربية وكيك مناسبات بمكونات طبيعية 100% — اطلب الآن مباشرة عبر الواتساب",
+    browse_products: "تصفح المنتجات",
+    contact_us: "تواصل معنا",
+    products_subtitle: "منتجاتنا المميزة",
+    products_title: "اختر ما يناسبك واطلب فوراً",
+    search_placeholder: "ابحث عن منتج...",
+    cat_all: "الكل",
+    cat_eastern: "حلويات شرقية",
+    cat_western: "حلويات غربية",
+    cat_cakes: "كيك المناسبات",
+    cat_pastry: "معجنات",
+    why_subtitle: "مزايانا",
+    why_title: "لماذا يختارنا العملاء؟",
+    feature_1_title: "جودة عالية",
+    feature_1_desc: "مكونات طبيعية 100% ووصفات أصيلة من أفضل الطهاة",
+    feature_2_title: "توصيل سريع",
+    feature_2_desc: "نوصل طلبك خلال ساعة داخل المدينة بكل عناية",
+    feature_3_title: "طلب سهل",
+    feature_3_desc: "اطلب مباشرة عبر الواتساب بدون تسجيل أو تعقيد",
+    feature_4_title: "رضا مضمون",
+    feature_4_desc: "أكثر من 5000 عميل سعيد يثقون بنا سنوياً",
+    testimonials_subtitle: "آراء عملائنا",
+    testimonials_title: "ماذا يقولون عنا؟",
+    testimonial_1: "أفضل حلويات جربتها في حياتي! الكيك كان طازج ولذيذ جداً والتوصيل كان سريع.",
+    testimonial_2: "طلبت كيك عيد ميلاد وكان فوق التوقعات. الشكل جميل والطعم رائع. أنصح الجميع!",
+    testimonial_3: "التعامل عبر الواتساب سهل ومريح، والرد كان سريع. تجربة شراء ممتازة بكل المقاييس.",
+    client_1: "محمد العتيبي",
+    client_2: "نورة السالم",
+    client_3: "عبدالله القحطاني",
+    faq_subtitle: "الأسئلة الشائعة",
+    faq_title: "كل ما تريد معرفته",
+    faq_q1: "كيف أطلب من الموقع؟",
+    faq_a1: "اختر المنتجات التي تعجبك، أضفها للسلة، ثم اضغط 'إتمام الطلب' وستفتح محادثة تلقائياً مع رسالة جاهزة.",
+    faq_q2: "كم يستغرق التوصيل؟",
+    faq_a2: "داخل المدينة: خلال 60 دقيقة. خارج المدينة: من 2-4 ساعات حسب المسافة.",
+    faq_q3: "هل يمكنني طلب كيك مناسبات مخصص؟",
+    faq_a3: "نعم بكل تأكيد! راسلنا على الواتساب وأخبرنا بالتفاصيل وسنحضره لك حسب طلبك.",
+    faq_q4: "ما هي طرق الدفع المتاحة؟",
+    faq_a4: "نقبل الدفع نقداً عند التسليم، أو عبر التحويل البنكي، أو مدى/Apple Pay.",
+    contact_title: "جاهز لتجربة ألذ الحلويات؟",
+    contact_desc: "راسلنا الآن عبر الواتساب وسنخدمك في الحال",
+    contact_now: "تواصل معنا الآن",
+    contact_hours: "يومياً من 9 صباحاً - 12 منتصف الليل",
+    contact_location: "الرياض - حي النخيل",
+    footer_rights: "جميع الحقوق محفوظة",
+    cart_title: "سلة الطلبات",
+    cart_empty: "سلتك فارغة",
+    cart_empty_desc: "أضف بعض المنتجات اللذيذة!",
+    cart_total: "الإجمالي:",
+    currency: "ر.س",
+    checkout: "إتمام الطلب عبر الواتساب",
+    add_to_cart: "أضف للسلة",
+    added: "مضاف",
+    price: "السعر",
+    view_details: "التفاصيل",
+    back: "رجوع",
+    nutrition: "القيم الغذائية",
+    calories: "سعرة",
+    protein: "بروتين",
+    carbs: "كارب",
+    fat: "دهون",
+    weight: "الوزن",
+    serves: "يكفي",
+    shelf: "الصلاحية",
+    toast_added: "تمت الإضافة إلى السلة",
+    toast_removed: "تم حذف المنتج",
+    whatsapp_order_greeting: "مرحباً 👋",
+    whatsapp_order_intro: "أرغب بطلب المنتجات التالية:",
+    whatsapp_order_product: "المنتج",
+    whatsapp_order_qty: "الكمية",
+    whatsapp_order_price: "السعر",
+    whatsapp_order_total: "الإجمالي الكلي",
+    whatsapp_order_thanks: "الرجاء تأكيد الطلب وشكراً 🌹",
+    whatsapp_general: "مرحباً 👋\nأرغب بالاستفسار عن منتجاتكم والحلويات المتوفرة 🌹"
+  },
+  en: {
+    store_name: "Fine Taste Sweets",
+    nav_home: "Home",
+    nav_products: "Products",
+    nav_why: "Why Us",
+    nav_faq: "FAQ",
+    nav_contact: "Contact",
+    hero_badge: "Fresh Sweets Made Daily",
+    hero_title_1: "Enjoy the Finest",
+    hero_title_2: " Sweets ",
+    hero_title_3: "in Your City",
+    hero_desc: "Eastern & Western sweets and celebration cakes made with 100% natural ingredients — Order now via WhatsApp",
+    browse_products: "Browse Products",
+    contact_us: "Contact Us",
+    products_subtitle: "Our Signature Products",
+    products_title: "Pick What You Love & Order Instantly",
+    search_placeholder: "Search for a product...",
+    cat_all: "All",
+    cat_eastern: "Eastern Sweets",
+    cat_western: "Western Sweets",
+    cat_cakes: "Celebration Cakes",
+    cat_pastry: "Pastries",
+    why_subtitle: "Our Advantages",
+    why_title: "Why Customers Choose Us?",
+    feature_1_title: "High Quality",
+    feature_1_desc: "100% natural ingredients with authentic recipes from top chefs",
+    feature_2_title: "Fast Delivery",
+    feature_2_desc: "We deliver your order within an hour inside the city with care",
+    feature_3_title: "Easy Ordering",
+    feature_3_desc: "Order directly via WhatsApp without registration or hassle",
+    feature_4_title: "Guaranteed Satisfaction",
+    feature_4_desc: "More than 5000 happy customers trust us every year",
+    testimonials_subtitle: "Customer Reviews",
+    testimonials_title: "What Do They Say About Us?",
+    testimonial_1: "Best sweets I've ever tried! The cake was fresh and delicious, and delivery was fast.",
+    testimonial_2: "I ordered a birthday cake and it exceeded expectations. Beautiful design and amazing taste!",
+    testimonial_3: "Ordering via WhatsApp was easy and smooth, and the response was fast. Excellent experience.",
+    client_1: "Mohammed Al-Otaibi",
+    client_2: "Noura Al-Salem",
+    client_3: "Abdullah Al-Qahtani",
+    faq_subtitle: "FAQ",
+    faq_title: "Everything You Need to Know",
+    faq_q1: "How do I order from the website?",
+    faq_a1: "Choose the products you like, add them to cart, then click 'Checkout' and a WhatsApp chat will open with a ready message.",
+    faq_q2: "How long does delivery take?",
+    faq_a2: "Inside the city: within 60 minutes. Outside: 2-4 hours depending on distance.",
+    faq_q3: "Can I order a custom celebration cake?",
+    faq_a3: "Absolutely! Contact us on WhatsApp and tell us the details, and we'll prepare it as you wish.",
+    faq_q4: "What payment methods are available?",
+    faq_a4: "We accept cash on delivery, bank transfer, or Mada/Apple Pay.",
+    contact_title: "Ready to Try the Best Sweets?",
+    contact_desc: "Message us now on WhatsApp and we'll serve you right away",
+    contact_now: "Contact Us Now",
+    contact_hours: "Daily from 9 AM - 12 Midnight",
+    contact_location: "Riyadh - Al Nakheel District",
+    footer_rights: "All Rights Reserved",
+    cart_title: "Order Cart",
+    cart_empty: "Your cart is empty",
+    cart_empty_desc: "Add some delicious products!",
+    cart_total: "Total:",
+    currency: "SAR",
+    checkout: "Checkout via WhatsApp",
+    add_to_cart: "Add to Cart",
+    added: "Added",
+    price: "Price",
+    view_details: "Details",
+    back: "Back",
+    nutrition: "Nutrition Facts",
+    calories: "cal",
+    protein: "protein",
+    carbs: "carbs",
+    fat: "fat",
+    weight: "Weight",
+    serves: "Serves",
+    shelf: "Shelf Life",
+    toast_added: "Added to cart",
+    toast_removed: "Product removed",
+    whatsapp_order_greeting: "Hello 👋",
+    whatsapp_order_intro: "I'd like to order the following products:",
+    whatsapp_order_product: "Product",
+    whatsapp_order_qty: "Quantity",
+    whatsapp_order_price: "Price",
+    whatsapp_order_total: "Grand Total",
+    whatsapp_order_thanks: "Please confirm the order, thank you 🌹",
+    whatsapp_general: "Hello 👋\nI'd like to inquire about your products and available sweets 🌹"
+  },
+  ur: {
+    store_name: "فائن ٹیسٹ سویٹس",
+    nav_home: "ہوم",
+    nav_products: "مصنوعات",
+    nav_why: "ہم کیوں",
+    nav_faq: "سوالات",
+    nav_contact: "رابطہ",
+    hero_badge: "روزانہ تازہ میٹھائیاں",
+    hero_title_1: "لطف اٹھائیں",
+    hero_title_2: " بہترین میٹھائیوں ",
+    hero_title_3: "کا اپنے شہر میں",
+    hero_desc: "مشرقی اور مغربی میٹھائیاں اور تقریبات کے کیک 100% قدرتی اجزاء کے ساتھ — واٹس ایپ پر ابھی آرڈر کریں",
+    browse_products: "مصنوعات دیکھیں",
+    contact_us: "ہم سے رابطہ",
+    products_subtitle: "ہماری خاص مصنوعات",
+    products_title: "اپنی پسند منتخب کریں اور فوراً آرڈر دیں",
+    search_placeholder: "پروڈکٹ تلاش کریں...",
+    cat_all: "سب",
+    cat_eastern: "مشرقی میٹھائیاں",
+    cat_western: "مغربی میٹھائیاں",
+    cat_cakes: "تقریب کے کیک",
+    cat_pastry: "پیسٹریز",
+    why_subtitle: "ہماری خوبیاں",
+    why_title: "گاہک ہمیں کیوں چنتے ہیں؟",
+    feature_1_title: "اعلیٰ معیار",
+    feature_1_desc: "100% قدرتی اجزاء اور بہترین شیف کی اصلی ترکیبیں",
+    feature_2_title: "تیز ترسیل",
+    feature_2_desc: "شہر کے اندر ایک گھنٹے میں آپ کا آرڈر پہنچاتے ہیں",
+    feature_3_title: "آسان آرڈر",
+    feature_3_desc: "بغیر رجسٹریشن براہ راست واٹس ایپ پر آرڈر کریں",
+    feature_4_title: "ضمانت شدہ اطمینان",
+    feature_4_desc: "ہر سال 5000 سے زیادہ خوش گاہک ہم پر اعتماد کرتے ہیں",
+    testimonials_subtitle: "گاہکوں کی رائے",
+    testimonials_title: "وہ ہمارے بارے میں کیا کہتے ہیں؟",
+    testimonial_1: "زندگی کی بہترین میٹھائیاں! کیک تازہ اور مزیدار تھا، ترسیل بھی تیز۔",
+    testimonial_2: "سالگرہ کا کیک منگوایا اور توقعات سے بڑھ کر تھا۔ خوبصورت ڈیزائن اور شاندار ذائقہ!",
+    testimonial_3: "واٹس ایپ پر آرڈر کرنا آسان اور آرام دہ تھا، جواب بھی فوری ملا۔ بہترین تجربہ۔",
+    client_1: "محمد العتیبی",
+    client_2: "نورہ السالم",
+    client_3: "عبداللہ القحطانی",
+    faq_subtitle: "عام سوالات",
+    faq_title: "ہر وہ چیز جو آپ جاننا چاہتے ہیں",
+    faq_q1: "میں ویب سائٹ سے کیسے آرڈر کروں؟",
+    faq_a1: "اپنی پسند کی مصنوعات منتخب کریں، کارٹ میں ڈالیں، پھر 'چیک آؤٹ' پر کلک کریں اور واٹس ایپ چیٹ تیار پیغام کے ساتھ کھل جائے گی۔",
+    faq_q2: "ترسیل میں کتنا وقت لگتا ہے؟",
+    faq_a2: "شہر کے اندر: 60 منٹ میں۔ باہر: فاصلے کے مطابق 2-4 گھنٹے۔",
+    faq_q3: "کیا میں کسٹم تقریب کا کیک منگوا سکتا ہوں؟",
+    faq_a3: "بالکل! واٹس ایپ پر ہم سے رابطہ کریں اور تفصیلات بتائیں، ہم آپ کی خواہش کے مطابق تیار کریں گے۔",
+    faq_q4: "ادائیگی کے کون سے طریقے دستیاب ہیں؟",
+    faq_a4: "ہم نقد ادائیگی، بینک ٹرانسفر، یا مدی/ایپل پے قبول کرتے ہیں۔",
+    contact_title: "بہترین میٹھائیوں کا تجربہ کرنے کے لیے تیار؟",
+    contact_desc: "ابھی واٹس ایپ پر ہمیں پیغام بھیجیں، ہم فوری خدمت کریں گے",
+    contact_now: "ابھی رابطہ کریں",
+    contact_hours: "روزانہ صبح 9 سے رات 12 بجے تک",
+    contact_location: "ریاض - النخیل",
+    footer_rights: "جملہ حقوق محفوظ ہیں",
+    cart_title: "آرڈر کارٹ",
+    cart_empty: "آپ کا کارٹ خالی ہے",
+    cart_empty_desc: "کچھ مزیدار مصنوعات شامل کریں!",
+    cart_total: "کل:",
+    currency: "روپے",
+    checkout: "واٹس ایپ پر آرڈر مکمل کریں",
+    add_to_cart: "کارٹ میں ڈالیں",
+    added: "شامل",
+    price: "قیمت",
+    view_details: "تفصیلات",
+    back: "واپس",
+    nutrition: "غذائی معلومات",
+    calories: "کیلوریز",
+    protein: "پروٹین",
+    carbs: "کارب",
+    fat: "چکنائی",
+    weight: "وزن",
+    serves: "کافی ہے",
+    shelf: "میعاد",
+    toast_added: "کارٹ میں شامل ہو گیا",
+    toast_removed: "پروڈکٹ ہٹا دی گئی",
+    whatsapp_order_greeting: "السلام علیکم 👋",
+    whatsapp_order_intro: "میں درج ذیل مصنوعات آرڈر کرنا چاہتا ہوں:",
+    whatsapp_order_product: "پروڈکٹ",
+    whatsapp_order_qty: "مقدار",
+    whatsapp_order_price: "قیمت",
+    whatsapp_order_total: "کل رقم",
+    whatsapp_order_thanks: "براہ کرم آرڈر کی تصدیق کریں، شکریہ 🌹",
+    whatsapp_general: "السلام علیکم 👋\nمیں آپ کی مصنوعات اور دستیاب میٹھائیوں کے بارے میں معلومات چاہتا ہوں 🌹"
+  }
+};
+
+let currentLang = localStorage.getItem('lang') || 'ar';
+let currentTheme = localStorage.getItem('theme') || 'light';
+let cart = [];
+let currentFilter = 'all';
+let currentSearch = '';
+let currentPage = 1;
+let itemsPerPage = 6;
+
+try {
+  const savedCart = localStorage.getItem('cart');
+  if (savedCart) {
+    const parsed = JSON.parse(savedCart);
+    if (Array.isArray(parsed)) {
+      cart = parsed.filter(item => item && typeof item.id === 'number' && typeof item.qty === 'number');
+    }
+  }
+} catch (e) {
+  console.error('Failed to load cart:', e);
+  cart = [];
+}
+
+function applyTheme() {
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  const icon = document.getElementById('themeIcon');
+  if (icon) {
+    icon.className = currentTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+  }
+}
+
+function toggleTheme() {
+  currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+  localStorage.setItem('theme', currentTheme);
+  applyTheme();
+}
+
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('lang', lang);
+  
+  const html = document.documentElement;
+  html.setAttribute('lang', lang);
+  
+  if (lang === 'en') {
+    html.setAttribute('dir', 'ltr');
+  } else {
+    html.setAttribute('dir', 'rtl');
+  }
+  
+  document.querySelectorAll('.lang-menu button').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+  
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    if (translations[lang] && translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+  
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.dataset.i18nPlaceholder;
+    if (translations[lang] && translations[lang][key]) {
+      el.placeholder = translations[lang][key];
+    }
+  });
+  
+  renderProducts();
+  updateCartUI();
+  
+  const dd = document.getElementById('langDropdown');
+  if (dd) dd.classList.remove('open');
+}
+
+function toggleLangMenu() {
+  document.getElementById('langDropdown').classList.toggle('open');
+}
+
+document.addEventListener('click', (e) => {
+  const dd = document.getElementById('langDropdown');
+  if (dd && !dd.contains(e.target)) dd.classList.remove('open');
+});
+
+function getLangValue(obj) {
+  if (typeof obj === 'string') return obj;
+  return obj[currentLang] || obj.ar || '';
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, (m) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[m]);
+}
+
+function getFilteredProducts() {
+  return products.filter(p => {
+    const matchCategory = currentFilter === 'all' || p.category === currentFilter;
+    const matchSearch = !currentSearch || 
+      getLangValue(p.name).toLowerCase().includes(currentSearch.toLowerCase()) ||
+      getLangValue(p.description).toLowerCase().includes(currentSearch.toLowerCase());
+    return matchCategory && matchSearch;
+  });
+}
+
+function getItemsPerPage() {
+  const w = window.innerWidth;
+  if (w <= 480) return 2;
+  if (w <= 900) return 4;
+  return 6;
+}
+
+function getTotalPages(filteredCount) {
+  return Math.max(1, Math.ceil(filteredCount / itemsPerPage));
+}
+
+function goToPage(page) {
+  currentPage = page;
+  renderProducts();
+  const productsSection = document.getElementById('products');
+  if (productsSection) {
+    productsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+function changePage(delta) {
+  const total = getTotalPages(getFilteredProducts().length);
+  const newPage = currentPage + delta;
+  if (newPage >= 1 && newPage <= total) {
+    goToPage(newPage);
+  }
+}
+
+function renderPagination(totalItems) {
+  const pag = document.getElementById('pagination');
+  if (!pag) return;
+  
+  const totalPages = getTotalPages(totalItems);
+  
+  if (totalPages <= 1) {
+    pag.style.display = 'none';
+    return;
+  }
+  
+  pag.style.display = 'flex';
+  
+  const isRTL = currentLang !== 'en';
+  const prevIcon = isRTL ? 'fa-chevron-right' : 'fa-chevron-left';
+  const nextIcon = isRTL ? 'fa-chevron-left' : 'fa-chevron-right';
+  const prevText = currentLang === 'ar' ? 'السابق' : currentLang === 'en' ? 'Prev' : 'پچھلا';
+  const nextText = currentLang === 'ar' ? 'التالي' : currentLang === 'en' ? 'Next' : 'اگلا';
+  
+  let html = '';
+  
+  html += `<button type="button" class="page-btn nav-btn" onclick="changePage(-1)" ${currentPage === 1 ? 'disabled' : ''}>
+    <i class="fas ${prevIcon}"></i>
+    <span>${prevText}</span>
+  </button>`;
+  
+  const pages = [];
+  const maxVisible = window.innerWidth <= 600 ? 5 : 7;
+  
+  if (totalPages <= maxVisible) {
+    for (let i = 1; i <= totalPages; i++) pages.push(i);
+  } else {
+    if (currentPage <= 3) {
+      pages.push(1, 2, 3, 4, '...', totalPages);
+    } else if (currentPage >= totalPages - 2) {
+      pages.push(1, '...', totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
+    } else {
+      pages.push(1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages);
+    }
+  }
+  
+  pages.forEach(p => {
+    if (p === '...') {
+      html += `<span class="page-dots">…</span>`;
+    } else {
+      html += `<button type="button" class="page-btn ${p === currentPage ? 'active' : ''}" onclick="goToPage(${p})">${p}</button>`;
+    }
+  });
+  
+  html += `<button type="button" class="page-btn nav-btn" onclick="changePage(1)" ${currentPage === totalPages ? 'disabled' : ''}>
+    <span>${nextText}</span>
+    <i class="fas ${nextIcon}"></i>
+  </button>`;
+  
+  if (window.innerWidth <= 768) {
+    const infoText = currentLang === 'ar' 
+      ? `صفحة ${currentPage} من ${totalPages}` 
+      : currentLang === 'en' 
+        ? `Page ${currentPage} of ${totalPages}` 
+        : `صفحہ ${currentPage} از ${totalPages}`;
+    html += `<div class="page-info">${infoText}</div>`;
+  }
+  
+  pag.innerHTML = html;
+}
+
+function renderProducts() {
+  const grid = document.getElementById('productsGrid');
+  if (!grid) return;
+  
+  const t = translations[currentLang];
+  const currency = CONFIG.currency[currentLang];
+  
+  itemsPerPage = getItemsPerPage();
+  
+  const filtered = getFilteredProducts();
+  const totalPages = getTotalPages(filtered.length);
+  
+  if (currentPage > totalPages) currentPage = totalPages;
+  if (currentPage < 1) currentPage = 1;
+  
+  const startIdx = (currentPage - 1) * itemsPerPage;
+  const endIdx = startIdx + itemsPerPage;
+  const paginatedProducts = filtered.slice(startIdx, endIdx);
+  
+  if (filtered.length === 0) {
+    grid.innerHTML = `
+      <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; color: var(--text-tertiary);">
+        <i class="fas fa-search" style="font-size: 3rem; opacity: 0.3; margin-bottom: 20px; display: block;"></i>
+        <p style="font-size: 1.1rem; font-weight: 600;">
+          ${currentLang === 'ar' ? 'لا توجد نتائج' : currentLang === 'en' ? 'No results found' : 'کوئی نتیجہ نہیں ملا'}
+        </p>
+      </div>
+    `;
+    renderPagination(0);
+    return;
+  }
+  
+  grid.innerHTML = paginatedProducts.map(product => {
+    const badge = getLangValue(product.badge);
+    const details = product.details[currentLang];
+    const isInCart = cart.some(item => item.id === product.id);
+    
+    const cartButtonHTML = isInCart
+      ? `<button type="button" class="btn-add-cart added" disabled>
+           <i class="fas fa-check"></i>
+           <span>${t.added}</span>
+         </button>`
+      : `<button type="button" class="btn-add-cart" onclick="addToCart(${product.id}, this, event)">
+           <i class="fas fa-plus"></i>
+           <span>${t.add_to_cart}</span>
+         </button>`;
+    
+    return `
+      <div class="product-wrapper reveal">
+        <div class="product-card" data-product-id="${product.id}">
+          <div class="product-face product-front">
+            <div class="product-image">
+              <img src="${product.image}" alt="${escapeHtml(getLangValue(product.name))}" loading="lazy">
+              ${badge ? `<span class="product-badge">${escapeHtml(badge)}</span>` : ''}
+              <button class="flip-btn" type="button" onclick="flipCard(${product.id}, event)" aria-label="Info">
+                <i class="fas fa-info"></i>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>${escapeHtml(getLangValue(product.name))}</h3>
+              <p class="desc">${escapeHtml(getLangValue(product.description))}</p>
+              <div class="product-footer">
+                <div class="product-price">
+                  ${product.price} <small>${currency}</small>
+                </div>
+                ${cartButtonHTML}
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-face product-back">
+            <div>
+              <h4><i class="fas fa-chart-pie"></i> ${t.nutrition}</h4>
+              <div class="nutrition-grid">
+                <div class="nutrition-item">
+                  <span class="value">${product.nutrition.calories}</span>
+                  <span class="label">${t.calories}</span>
+                </div>
+                <div class="nutrition-item">
+                  <span class="value">${product.nutrition.protein}g</span>
+                  <span class="label">${t.protein}</span>
+                </div>
+                <div class="nutrition-item">
+                  <span class="value">${product.nutrition.carbs}g</span>
+                  <span class="label">${t.carbs}</span>
+                </div>
+                <div class="nutrition-item">
+                  <span class="value">${product.nutrition.fat}g</span>
+                  <span class="label">${t.fat}</span>
+                </div>
+              </div>
+              <div class="product-details">
+                <p><strong>${t.weight}:</strong> ${escapeHtml(details.weight)}</p>
+                <p><strong>${t.serves}:</strong> ${escapeHtml(details.serves)}</p>
+                <p><strong>${t.shelf}:</strong> ${escapeHtml(details.shelf)}</p>
+              </div>
+            </div>
+            <button type="button" class="btn-flip-back" onclick="flipCard(${product.id}, event)">
+              <i class="fas fa-undo"></i> ${t.back}
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+  
+  renderPagination(filtered.length);
+  observeReveal();
+}
+
+function flipCard(productId, event) {
+  if (event) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+  const card = document.querySelector(`.product-card[data-product-id="${productId}"]`);
+  if (card) card.classList.toggle('flipped');
+}
+
+function addToCart(productId, btnEl, event) {
+  if (event) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+  
+  const product = products.find(p => p.id === productId);
+  if (!product) {
+    console.error('Product not found:', productId);
+    return;
+  }
+  
+  const existing = cart.find(item => item.id === productId);
+  
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({ id: productId, qty: 1 });
+  }
+  
+  saveCart();
+  updateCartUI();
+  showToast(translations[currentLang].toast_added);
+  
+  if (btnEl && btnEl.classList) {
+    btnEl.classList.add('added');
+    btnEl.disabled = true;
+    btnEl.innerHTML = `<i class="fas fa-check"></i> <span>${translations[currentLang].added}</span>`;
+  }
+}
+
+function removeFromCart(productId) {
+  cart = cart.filter(item => item.id !== productId);
+  saveCart();
+  updateCartUI();
+  showToast(translations[currentLang].toast_removed);
+  renderProducts();
+}
+
+function updateQty(productId, delta) {
+  const item = cart.find(i => i.id === productId);
+  if (!item) return;
+  
+  item.qty += delta;
+  if (item.qty <= 0) {
+    removeFromCart(productId);
+    return;
+  }
+  
+  saveCart();
+  updateCartUI();
+}
+
+function saveCart() {
+  try {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  } catch (e) {
+    console.error('Failed to save cart:', e);
+  }
+}
+
+function getCartTotal() {
+  return cart.reduce((sum, item) => {
+    const product = products.find(p => p.id === item.id);
+    return sum + (product ? product.price * item.qty : 0);
+  }, 0);
+}
+
+function getCartItemCount() {
+  return cart.length;
+}
+
+function updateCartUI() {
+  const badge = document.getElementById('cartBadge');
+  const count = getCartItemCount();
+  
+  if (badge) {
+    if (count > 0) {
+      badge.style.display = 'flex';
+      badge.textContent = count;
+    } else {
+      badge.style.display = 'none';
+    }
+  }
+  
+  const itemCountEl = document.getElementById('cartItemCount');
+  const totalEl = document.getElementById('cartTotal');
+  if (itemCountEl) itemCountEl.textContent = `(${count})`;
+  if (totalEl) totalEl.textContent = getCartTotal();
+  
+  const itemsEl = document.getElementById('cartItems');
+  if (!itemsEl) return;
+  
+  const t = translations[currentLang];
+  const currency = CONFIG.currency[currentLang];
+  
+  if (cart.length === 0) {
+    itemsEl.innerHTML = `
+      <div class="cart-empty">
+        <i class="fas fa-shopping-bag"></i>
+        <p style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">${t.cart_empty}</p>
+        <p style="font-size: 0.9rem;">${t.cart_empty_desc}</p>
+      </div>
+    `;
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    if (checkoutBtn) checkoutBtn.disabled = true;
+    return;
+  }
+  
+  itemsEl.innerHTML = cart.map(item => {
+    const product = products.find(p => p.id === item.id);
+    if (!product) return '';
+    
+    return `
+      <div class="cart-item">
+        <img src="${product.image}" alt="${escapeHtml(getLangValue(product.name))}" class="cart-item-image">
+        <div class="cart-item-info">
+          <h4>${escapeHtml(getLangValue(product.name))}</h4>
+          <div class="price">${product.price * item.qty} ${currency}</div>
+        </div>
+        <div class="cart-item-controls">
+          <button type="button" class="remove-btn" onclick="removeFromCart(${product.id})" aria-label="Remove">
+            <i class="fas fa-trash"></i>
+          </button>
+          <div class="qty-control">
+            <button type="button" class="qty-btn" onclick="updateQty(${product.id}, -1)" aria-label="Minus">
+              <i class="fas fa-minus"></i>
+            </button>
+            <span class="qty-value">${item.qty}</span>
+            <button type="button" class="qty-btn" onclick="updateQty(${product.id}, 1)" aria-label="Plus">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+  
+  const checkoutBtn = document.getElementById('checkoutBtn');
+  if (checkoutBtn) checkoutBtn.disabled = false;
+}
+
+function openCart() {
+  const overlay = document.getElementById('cartOverlay');
+  if (overlay) overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCart() {
+  const overlay = document.getElementById('cartOverlay');
+  if (overlay) overlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeCartOnOverlay(e) {
+  if (e.target.id === 'cartOverlay') closeCart();
+}
+
+function checkout() {
+  if (cart.length === 0) return;
+  
+  const t = translations[currentLang];
+  const currency = CONFIG.currency[currentLang];
+  
+  let message = `${t.whatsapp_order_greeting}\n${t.whatsapp_order_intro}\n\n`;
+  
+  cart.forEach((item, index) => {
+    const product = products.find(p => p.id === item.id);
+    if (product) {
+      message += `${index + 1}. ${t.whatsapp_order_product}: ${getLangValue(product.name)}\n`;
+      message += `   ${t.whatsapp_order_qty}: ${item.qty}\n`;
+      message += `   ${t.whatsapp_order_price}: ${product.price * item.qty} ${currency}\n\n`;
+    }
+  });
+  
+  message += `━━━━━━━━━━━━━━━━\n`;
+  message += `💰 ${t.whatsapp_order_total}: ${getCartTotal()} ${currency}\n`;
+  message += `━━━━━━━━━━━━━━━━\n\n`;
+  message += t.whatsapp_order_thanks;
+  
+  const url = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank');
+}
+
+function openGeneralChat(e) {
+  if (e) e.preventDefault();
+  const message = translations[currentLang].whatsapp_general;
+  const url = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank');
+}
+
+let toastTimeout;
+function showToast(message) {
+  const toast = document.getElementById('toast');
+  const msgEl = document.getElementById('toastMessage');
+  if (!toast || !msgEl) return;
+  
+  msgEl.textContent = message;
+  toast.classList.add('show');
+  
+  clearTimeout(toastTimeout);
+  toastTimeout = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2500);
+}
+
+const searchInput = document.getElementById('searchInput');
+if (searchInput) {
+  searchInput.addEventListener('input', (e) => {
+    currentSearch = e.target.value;
+    currentPage = 1;
+    renderProducts();
+  });
+}
+
+const categoriesEl = document.getElementById('categories');
+if (categoriesEl) {
+  categoriesEl.addEventListener('click', (e) => {
+    const btn = e.target.closest('.category-btn');
+    if (!btn) return;
+    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter = btn.dataset.category;
+    currentPage = 1;
+    renderProducts();
+  });
+}
+
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const wasActive = item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    if (!wasActive) item.classList.add('active');
+  });
+});
+
+function toggleMenu() {
+  const nav = document.getElementById('navLinks');
+  if (nav) nav.classList.toggle('active');
+}
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    const nav = document.getElementById('navLinks');
+    if (nav) nav.classList.remove('active');
+  });
+});
+
+let revealObserver = null;
+function observeReveal() {
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    return;
+  }
+  
+  if (!revealObserver) {
+    revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  }
+  
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => revealObserver.observe(el));
+}
+
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    const newItemsPerPage = getItemsPerPage();
+    if (newItemsPerPage !== itemsPerPage) {
+      itemsPerPage = newItemsPerPage;
+      currentPage = 1;
+      renderProducts();
+    }
+  }, 250);
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeCart();
+});
+
+(function init() {
+  applyTheme();
+  setLanguage(currentLang);
+  observeReveal();
+})();
+</script>
+
+</body>
+</html>
